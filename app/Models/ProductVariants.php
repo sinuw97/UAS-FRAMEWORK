@@ -4,13 +4,13 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class CartModel extends Model
+class ProductVariants extends Model
 {
-    protected $table            = 'carts';
-    protected $primaryKey       = 'cart_id';
+    protected $table            = 'product_variants';
+    protected $primaryKey       = 'variant_id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'object';
-    protected $allowedFields = ['user_id', 'variant_id', 'quantity', 'created_at', 'updated_at'];
+    protected $allowedFields = ['product_id', 'size', 'stock', 'price', 'created_at', 'updated_at'];
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
