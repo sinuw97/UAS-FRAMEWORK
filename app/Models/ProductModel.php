@@ -10,16 +10,7 @@ class ProductModel extends Model
     protected $primaryKey       = 'product_id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'object';
-    protected $allowedFields    = [
-        "product_name",
-        "description",
-        "category_id",
-        "stock",
-        "price",
-        "product_img",
-        "created_at",
-        "updated_at",
-    ];
+    protected $allowedFields = ['name', 'description', 'price', 'stock', 'image', 'category_id', 'product_type', 'created_at', 'updated_at'];
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';

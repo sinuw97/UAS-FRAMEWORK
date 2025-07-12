@@ -10,13 +10,7 @@ class CartModel extends Model
     protected $primaryKey       = 'cart_id';
     protected $useAutoIncrement = true;
     protected $returnType       = 'object';
-    protected $allowedFields    = [
-        "user_id",
-        "product_id",
-        "quantity",
-        "created_at",
-        "updated_at",
-    ];
+    protected $allowedFields = ['user_id', 'variant_id', 'quantity', 'created_at', 'updated_at'];
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
