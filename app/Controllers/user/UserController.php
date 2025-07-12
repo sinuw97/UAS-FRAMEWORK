@@ -99,8 +99,6 @@ class UserController extends BaseController
             ];
 
             return view('dashboard/user/Cart', $data);
-
-            return view('dashboard/user/Cart');
         } catch (\Exception $e) {
             log_message('error', $e->getMessage());
             return redirect()->back()->with('error', 'Terjadi kesalahan saat mengambil cart');
@@ -155,7 +153,7 @@ class UserController extends BaseController
 
             session()->set('cart', $cart);
 
-            return redirect()->to('/cart')->with('success', 'Product added to cart');
+            return redirect()->to('product/my-cart')->with('success', 'Product added to cart');
         } catch (\Exception $e) {
             log_message('error', $e->getMessage());
             return redirect()->back()->with('error', 'Failed to add to cart');

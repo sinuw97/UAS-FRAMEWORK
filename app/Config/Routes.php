@@ -5,6 +5,9 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
+$routes->get('/login', 'auth\AuthController::login');
+$routes->post('/login/submit', 'auth\AuthController::loginSubmit');
+$routes->get('/logout', 'auth\AuthController::logout');
 
 // Beranda Utama
 $routes->get('/beranda', 'User\UserController::showBeranda');

@@ -30,7 +30,7 @@
       <div class="border border-black w-[35%] h-[400px]">
         <img src="<?= base_url('images/' . $type . '/' . $product->image) ?>" alt="<?= $product->name ?>" class="h-auto w-full h-64 object-cover">
       </div>
-      <div class=" w-[65%] h-[400px] font-poppins pl-5">
+      <div class=" w-[65%] h-[400px] font-poppins pl-5 overflow-y-hidden">
         <!-- Product name -->
         <h2 class="text-2xl font-bold"><?= esc($product->name) ?></h2>
         <!-- Descriptions -->
