@@ -7,7 +7,7 @@
   style="background-image: url('<?= base_url('images/background/header-beranda.webp') ?>'); background-size: cover; background-position: center;">
   <div class="absolute inset-0 bg-black bg-opacity-40"></div>
 
-  <div class="relative z-10 text-white">
+  <div class="relative z-10 text-[#EEEEEE]">
     <h1 class="text-4xl md:text-5xl font-poppins font-bold leading-tight">
       Elevate Your Style <br> with Authentic Batik
     </h1>

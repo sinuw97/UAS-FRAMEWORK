@@ -16,8 +16,8 @@ class ProductSeeder extends Seeder
                     'description' => 'Kemeja batik pria lengan panjang dengan motif parang dihiasi dengan motif flora. Motif yang elegan dan kain yang nyaman dipakai.',
                     'price' => 307000,
                     'stock' => 450,
-                    'image' => 'kemeja_barong_flora.jpg',
-                    'category_id' => 1, // Batik Pria
+                    'image' => 'kemeja_barong_flora.jpeg',
+                    'category_id' => 1,
                     'product_type' => 'baju',
                     'created_at' => Time::now(),
                     'updated_at' => Time::now(),
@@ -27,8 +27,8 @@ class ProductSeeder extends Seeder
                     'description' => 'Kemeja batik tulis pria lengan panjang dengan pola geometris dan sentuhan flora. ',
                     'price' => 575000,
                     'stock' => 250,
-                    'image' => 'kemeja_tulis_pola.jpg',
-                    'category_id' => 1, // Batik Pria
+                    'image' => 'kemeja_tulis_pola.jpeg',
+                    'category_id' => 1,
                     'product_type' => 'baju',
                     'created_at' => Time::now(),
                     'updated_at' => Time::now(),
@@ -38,8 +38,8 @@ class ProductSeeder extends Seeder
                     'description' => 'Kemeja batik pria lengan panjang dengan pola geometris dan sentuhan flora. ',
                     'price' => 305000,
                     'stock' => 250,
-                    'image' => 'kemeja_barong_biru_pendek.jpg',
-                    'category_id' => 1, // Batik Pria
+                    'image' => 'kemeja_barong_biru_pendek.jpeg',
+                    'category_id' => 1,
                     'product_type' => 'baju',
                     'created_at' => Time::now(),
                     'updated_at' => Time::now(),
@@ -49,8 +49,8 @@ class ProductSeeder extends Seeder
                     'description' => 'Kemeja batik tulis pria lengan panjang bermotif Parang Rusak Lereng berpadu aksen flora dan geometris kontemporer. ',
                     'price' => 280000,
                     'stock' => 330,
-                    'image' => 'kemeja_parang_rusak_solo.jpg',
-                    'category_id' => 1, // Batik Pria
+                    'image' => 'kemeja_parang_rusak_solo.jpeg',
+                    'category_id' => 1,
                     'product_type' => 'baju',
                     'created_at' => Time::now(),
                     'updated_at' => Time::now(),
@@ -60,8 +60,8 @@ class ProductSeeder extends Seeder
                     'description' => 'Kemeja batik pria lengan pendek dengan pola geometris dan sentuhan flora. ',
                     'price' => 287000,
                     'stock' => 250,
-                    'image' => 'kemeja_barong_biru_panjang.jpg',
-                    'category_id' => 1, // Batik Pria
+                    'image' => 'kemeja_barong_biru_panjang.jpeg',
+                    'category_id' => 1,
                     'product_type' => 'baju',
                     'created_at' => Time::now(),
                     'updated_at' => Time::now(),
@@ -71,8 +71,8 @@ class ProductSeeder extends Seeder
                     'description' => 'Kemeja batik pria lengan pendek bermotif burung bangau terbang, simbol kebebasan dan harapan, berpadu motif flora khas Pekalongan dalam balutan warna biru cerah yang menawan.',
                     'price' => 290000,
                     'stock' => 250,
-                    'image' => 'kemeja_bangau_pekalonagn.jpg',
-                    'category_id' => 1, // Batik Pria
+                    'image' => 'kemeja_bangau_pekalongan.jpg',
+                    'category_id' => 1,
                     'product_type' => 'baju',
                     'created_at' => Time::now(),
                     'updated_at' => Time::now(),
@@ -83,7 +83,7 @@ class ProductSeeder extends Seeder
                     'price' => 295000,
                     'stock' => 250,
                     'image' => 'kemeja_kawung_biru.jpg',
-                    'category_id' => 1, // Batik Pria
+                    'category_id' => 1,
                     'product_type' => 'baju',
                     'created_at' => Time::now(),
                     'updated_at' => Time::now(),
@@ -94,7 +94,7 @@ class ProductSeeder extends Seeder
                     'price' => 295000,
                     'stock' => 250,
                     'image' => 'kemeja_kawung_merah.jpg',
-                    'category_id' => 1, // Batik Pria
+                    'category_id' => 1,
                     'product_type' => 'baju',
                     'created_at' => Time::now(),
                     'updated_at' => Time::now(),
@@ -105,7 +105,7 @@ class ProductSeeder extends Seeder
                     'price' => 314000,
                     'stock' => 250,
                     'image' => 'kemeja_lunar.jpg',
-                    'category_id' => 1, // Batik Pria
+                    'category_id' => 1,
                     'product_type' => 'baju',
                     'created_at' => Time::now(),
                     'updated_at' => Time::now(),
@@ -115,8 +115,8 @@ class ProductSeeder extends Seeder
                     'description' => 'Tampil anggun dengan batik wanita bermotif Truntum hitam putih yang melambangkan ketulusan dan cinta abadi, dipadukan dengan kombinasi motif klasik pada bagian lengan puff dan pinggang. Cocok untuk acara formal, kondangan, maupun kantor dengan nuansa elegan dan modern.',
                     'price' => 249000,
                     'stock' => 315,
-                    'image' => 'batik_wanita_truntum_lengan_puff.jpg',
-                    'category_id' => 2, // Batik Wanita
+                    'image' => 'batik_wanita_truntum_lengan_puff.jpeg',
+                    'category_id' => 2,
                     'product_type' => 'baju',
                     'created_at' => Time::now(),
                     'updated_at' => Time::now(),
@@ -127,7 +127,7 @@ class ProductSeeder extends Seeder
                     'price' => 179000,
                     'stock' => 220,
                     'image' => 'batik_wanita_kombinasi_lurik_kupu.jpg',
-                    'category_id' => 2, // Batik Wanita
+                    'category_id' => 2,
                     'product_type' => 'baju',
                     'created_at' => Time::now(),
                     'updated_at' => Time::now(),
@@ -138,7 +138,7 @@ class ProductSeeder extends Seeder
                     'price' => 279000,
                     'stock' => 125,
                     'image' => 'setelan_batik_wanita_parang_flora.jpg',
-                    'category_id' => 2, // Batik Wanita
+                    'category_id' => 2,
                     'product_type' => 'baju',
                     'created_at' => Time::now(),
                     'updated_at' => Time::now(),
@@ -149,7 +149,7 @@ class ProductSeeder extends Seeder
                     'price' => 239000,
                     'stock' => 185,
                     'image' => 'tunik_batik_wanita_biru_pastel.jpg',
-                    'category_id' => 2, // Batik Wanita
+                    'category_id' => 2,
                     'product_type' => 'baju',
                     'created_at' => Time::now(),
                     'updated_at' => Time::now(),
@@ -160,7 +160,7 @@ class ProductSeeder extends Seeder
                     'price' => 299000,
                     'stock' => 140,
                     'image' => 'dress_batik_wanita_parang_renda.jpg',
-                    'category_id' => 2, // Batik Wanita
+                    'category_id' => 2,
                     'product_type' => 'baju',
                     'created_at' => Time::now(),
                     'updated_at' => Time::now(),
@@ -171,7 +171,7 @@ class ProductSeeder extends Seeder
                     'price' => 315000,
                     'stock' => 180,
                     'image' => 'dress_batik_wanita_parang_modern.jpg',
-                    'category_id' => 2, // Batik Wanita
+                    'category_id' => 2,
                     'product_type' => 'baju',
                     'created_at' => Time::now(),
                     'updated_at' => Time::now(),
@@ -182,7 +182,7 @@ class ProductSeeder extends Seeder
                     'price' => 259000,
                     'stock' => 180,
                     'image' => 'tunik_batik_wanita_parang_flora.jpg',
-                    'category_id' => 2, // Batik Wanita
+                    'category_id' => 2,
                     'product_type' => 'baju',
                     'created_at' => Time::now(),
                     'updated_at' => Time::now(),
