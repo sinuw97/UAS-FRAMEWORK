@@ -23,5 +23,6 @@ $routes->get('/product/variant/(:num)/(:segment)', 'User\UserController::getVari
 //Admin
 $routes->get('/admin/dashboard', 'Admin\AdminController::showDashboard');
 $routes->get('/admin/all-products', 'Admin\AdminController::showProduct');
+$routes->post('/admin/add-product', 'Admin\AdminController::addProduct');
 $routes->get('/admin/all-products/add-product', 'Admin\AdminController::showAddProduct');
 $routes->get('/admin/all-orders', 'Admin\AdminController::showOrder');

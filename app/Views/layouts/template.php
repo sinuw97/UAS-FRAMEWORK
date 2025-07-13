@@ -25,7 +25,8 @@
                     <img src="<?= base_url('logo/logo.png') ?>" alt="logo-company" class="w-[50px] h-[50px]">
                     <p class="font-messiri text-sm text-center whitespace-nowrap">Iskandar Batik</p>
                 </div>
-                <div class="relative flex items-center w-[250px] md:w-[300px] font-poppins"> <input
+                <div class="relative flex items-center w-[250px] md:w-[300px] font-poppins">
+                    <input
                         type="text"
                         placeholder="Search"
                         class="text-[#EEEEEE] w-full pl-3 pr-9 py-1 rounded-lg text-sm focus:outline-none bg-[#D9D9D9]/45 placeholder-[#EEEEEE] focus:ring-1 focus:ring-[#EEEEEE]">
