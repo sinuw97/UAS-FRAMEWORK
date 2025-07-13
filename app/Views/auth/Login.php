@@ -9,7 +9,7 @@
     <!-- Memuat Lucide Icons dari CDN untuk ikon -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        /* Mengatur font Inter sebagai default */
+        
         body {
             font-family: 'Inter', sans-serif;
         }
@@ -26,7 +26,7 @@
         <!-- Bagian Kiri: Logo -->
         <div class="md:w-1/2 flex items-center justify-center p-8 bg-white">
             <!-- Path logo telah diperbarui sesuai struktur folder Anda: public/img/logo.png -->
-            <img src="<?php echo base_url('img/logo.png'); ?>" alt="" class="max-w-full h-auto rounded-full">
+            <img src="<?php echo base_url('logo/logo.png'); ?>" alt="" class="max-w-full h-auto rounded-full">
         </div>
 
         <!-- Bagian Kanan: Formulir Login -->
@@ -44,7 +44,7 @@
                         id="email"
                         name="email"
                         placeholder="Email"
-                        class="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
+                        class="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#7C1313] transition duration-200"
                         required
                     >
                 </div>
@@ -59,7 +59,7 @@
                         id="password"
                         name="password"
                         placeholder="Password"
-                        class="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200"
+                        class="w-full pl-10 pr-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#7C1313] transition duration-200"
                         required
                     >
                 </div>
@@ -67,7 +67,7 @@
                 <!-- Tombol Login -->
                 <button
                     type="submit"
-                    class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-200 font-semibold shadow-md"
+                    class="w-full bg-[#7C1313] text-white py-3 rounded-lg hover:bg-[#C5A253] focus:outline-none focus:ring-2 focus:ring-[#7C1313] focus:ring-offset-2 transition duration-200 font-semibold shadow-md"
                 >
                     Log In
                 </button>

@@ -1,0 +1,119 @@
+/* Global reset & layout */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container dua kolom */
+.container {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Kolom logo */
+.logo-container {
+    background-color: #ffffff;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.logo-container img {
+    width: 80%;
+    max-width: 300px;
+}
+
+/* Kolom form */
+.form-container {
+    background-color: #d1d1d1;
+    color: #0c0c0c;
+    padding: 40px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Judul & welcome text */
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.welcome-text {
+    text-align: center;
+    color: #0c0c0c;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Input field */
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #333;
+    box-sizing: border-box;
+}
+
+.form-container input:focus {
+    outline: none;
+    border-color: #7C1313;
+    box-shadow: 0 0 5px #7C1313;
+}
+
+/* Tombol */
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #7C1313;
+    color: white;
+    border: 2px solid #7C1313;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-container button:hover {
+    background-color: #C5A253;
+    border-color: #C5A253;
+    color: #333;
+}
+
+.success {
+    background-color: #d4edda;
+    padding: 10px;
+    color: #155724;
+    margin-bottom: 15px;
+    border-left: 4px solid #28a745;
+    border-radius: 4px;
+}
+
+
+/* Pesan error */
+.error {
+    background-color: #ffdcdc;
+    padding: 10px;
+    color: #a00;
+    margin-bottom: 15px;
+    border-left: 4px solid #f00;
+    border-radius: 4px;
+}
