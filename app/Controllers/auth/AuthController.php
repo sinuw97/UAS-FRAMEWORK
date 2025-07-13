@@ -15,21 +15,22 @@ class AuthController extends BaseController
     public function loginSubmit()
     {
         $session = session();
-        $model = new UserModel();
+        $userModel = new UserModel();
 
         $email = $this->request->getPost('email');
         $password = $this->request->getPost('password');
 
-        $user = $model->where('email', $email)->first();
+        $user = $userModel->where('email', $email)->first();
 
         if ($user) {
-            if (password_verify($password, $user['password'])) {
+            if (password_verify($password, $user->password)) {
                 $session->set([
-                    'user_id' => $user['id'],
-                    'user_email' => $user['email'],
+                    'user_id' => $user->user_id,
+                    'user_name' => $user->username,
+                    'user_email' => $user->email,
                     'isLoggedIn' => true
                 ]);
-                return redirect()->to('/dashboard');
+                return redirect()->to('/beranda');
             } else {
                 return redirect()->back()->with('error', 'Password salah.');
             }
