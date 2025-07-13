@@ -62,12 +62,31 @@
                     </svg>My Cart
                 </a>
 
-                <a href=""
-                    class="bg-[#EEEEEE] text-[#0E0E0E] px-2 rounded-lg hover:bg-gray-200 transition flex gap-1 whitespace-nowrap">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="user" class="w-[20px] h-[20px]">
-                        <path fill="#0E0E0E" d="M15.71,12.71a6,6,0,1,0-7.42,0,10,10,0,0,0-6.22,8.18,1,1,0,0,0,2,.22,8,8,0,0,1,15.9,0,1,1,0,0,0,1,.89h.11a1,1,0,0,0,.88-1.1A10,10,0,0,0,15.71,12.71ZM12,12a4,4,0,1,1,4-4A4,4,0,0,1,12,12Z"></path>
-                    </svg>Sign In
-                </a>
+                <?php if (session()->get('isLoggedIn')): ?>
+                    <div x-data="{ open: false }" class="relative">
+                        <button @click="open = !open"
+                            class="flex items-center gap-2 text-[#EEEEEE] px-2 rounded-lg hover:text-gray-200 transition whitespace-nowrap">
+                            <img
+                                src="https://ui-avatars.com/api/?name=<?= urlencode(session()->get('user_name')) ?>&size=32&rounded=true"
+                                alt="Profile"
+                                class="w-8 h-8 rounded-full">
+                            <span><?= session()->get('user_name') ?></span>
+                        </button>
+                        <div x-show="open" @click.away="open = false" x-transition
+                            class="absolute right-0 mt-2 w-40 bg-[#EEEEEE] text-black rounded shadow-md z-50">
+                            <a href="<?= base_url('/profile') ?>" class="block px-4 py-2 hover:bg-gray-100">Profile</a>
+                            <a href="<?= base_url('/logout') ?>" class="block px-4 py-2 hover:bg-gray-100">Logout</a>
+                        </div>
+                    </div>
+                <?php else: ?>
+                    <a href="<?= base_url('/login') ?>"
+                        class="bg-[#EEEEEE] text-[#0E0E0E] px-2 rounded-lg hover:bg-gray-200 transition flex gap-1 whitespace-nowrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="user" class="w-[20px] h-[20px]">
+                            <path fill="#0E0E0E" d="M15.71,12.71a6,6,0,1,0-7.42,0,10,10,0,0,0-6.22,8.18,1,1,0,0,0,2,.22,8,8,0,0,1,15.9,0,1,1,0,0,0,1,.89h.11a1,1,0,0,0,.88-1.1A10,10,0,0,0,15.71,12.71ZM12,12a4,4,0,1,1,4-4A4,4,0,0,1,12,12Z"></path>
+                        </svg>Sign In
+                    </a>
+                <?php endif; ?>
+
             </div>
         </div>
     </nav>
@@ -77,7 +96,7 @@
     </main>
 
     <footer>
-         <?= $this->renderSection('footer') ?>
+        <?= $this->renderSection('footer') ?>
     </footer>
 </body>
 
